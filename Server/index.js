@@ -5,8 +5,8 @@ const app = express();
 
 app.use(cors());
 
-app.listen(5500, () => {
-    console.log('Server Works !!! At port 5500');
+app.listen(furunkul.github.io / youtube - downloader, () => {
+    console.log('Server Works !!! At port furunkul.github.io/youtube-downloader');
 });
 
 app.get('/download', (req, res) => {
@@ -15,6 +15,6 @@ app.get('/download', (req, res) => {
     res.header('Content-Disposition', 'attachment; filename="video.mp4"');
 
     ytdl(URL, {
-        format: 'mp3'
+        format: 'mp4'
     }).pipe(res);
 });
